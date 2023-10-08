@@ -1,81 +1,55 @@
 import React from "react";
 import pic7 from "../../assets/photos/pic7.jpg";
+import pic4 from "../../assets/photos/pic4.jpg";
+import ServiceCard from "../../components/serviceCard/ServiceCard";
 
 const Services = () => {
   return (
     <main>
-      <div className="row ">
-        <div className=" row ">
+      <div className="row g-0">
+        <div className=" row g-0">
           {" "}
           <img
             src={pic7}
             alt="..."
-            className="img-fluid vh-100 position-reltive"
+            className="img-fluid vh-100 position-relative"
+            style={{
+              filter: "brightness(30%)",
+            }}
           />
         </div>
-        <div className="position-absolute text-white d-flex flex-column justify-content-center align-items-center">
-          <h1>Services</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="position-absolute text-white d-flex flex-column justify-content-center align-items-center p-5 mt-5 ">
+          <h1 className="mt-5 pt-5" style={{ fontSize: "5rem" }}>
+            Services
+          </h1>
+          <p className="py-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
         </div>
       </div>
 
-      <div className="row">
-        <h1>Services We Offer</h1>
+      <div className="row g-0">
+        <h1 className="text-center text-primary pt-5 pb-4">
+          Services We Offer
+        </h1>
       </div>
 
-      <div className="row bg-gray  ">
-        <div className="row" style={{ width: "18rem" }}>
-          <div class="card d-flex">
-            <img src={pic7} alt="" className="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="col">
-          <div class="card" style={{ width: "18rem" }}>
-            <img src={pic7} alt="" className="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="col">
-          <div class="card" style={{ width: "18rem" }}>
-            <img src={pic7} alt="" className="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className="row g-0 d-flex justify-content-center align-items-center py-4 bg-secondary">
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
       </div>
 
-      <div className="row">
-        <h1>Routes</h1>
-        <div className="row">API</div>
+      <div className="row py-5 g-0">
+        <h1 className="text-center text-primary">Routes</h1>
+        <div className="row my-4 d-flex justify-content-center align-items-center">
+          <img
+            src={pic4}
+            alt=""
+            className="object-fit"
+            style={{ height: "25rem", width: "45rem" }}
+          />
+        </div>
       </div>
     </main>
   );

@@ -3,7 +3,10 @@ import React from "react";
 const Header = () => {
   return (
     <div className="fixed-top">
-      <ul className=" nav bg-primary text-white d-flex justify-content-between">
+      <ul
+        className=" nav bg-primary text-white d-flex justify-content-between"
+        style={{ fontSize: "0.75rem" }}
+      >
         <div className="d-flex">
           <li className="nav-item ">
             <a
@@ -23,7 +26,11 @@ const Header = () => {
         </div>
         <li className="nav-item float-end">
           <a className="nav-link" href="#">
-            <button type="button" className="btn btn-outline-light">
+            <button
+              type="button"
+              className="btn btn-outline-light"
+              style={{ fontSize: "0.75rem" }}
+            >
               Login
             </button>
           </a>
@@ -51,13 +58,13 @@ const Header = () => {
                 <a
                   className="nav-link active ms-5 px-4"
                   aria-current="page"
-                  href="#"
+                  href="/"
                 >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-4" href="">
+                <a className="nav-link px-4" href="services">
                   Services
                 </a>
               </li>

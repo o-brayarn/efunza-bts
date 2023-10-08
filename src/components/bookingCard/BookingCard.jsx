@@ -45,7 +45,11 @@ const BookingCard = () => {
             </div>
 
             <div className="col px-4 mx-2">
-              <button type="submit" class="btn btn-primary btn-small px-5 rounded-pill ">
+              <button
+                type="submit"
+                class="btn btn-primary btn-small px-5 rounded-pill "
+                style={{ fontSize: "0.75rem" }}
+              >
                 Make a booking
               </button>
             </div>

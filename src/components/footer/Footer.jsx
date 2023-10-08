@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
             <h4>EBTS</h4>
-            <ul className="nav flex-column">
+            <ul className="nav flex-column" style={{ fontSize: "0.75rem" }}>
               <li className="nav-item mb-2">
                 We make your travel experience easy
               </li>
@@ -16,7 +16,7 @@ const Footer = () => {
 
           <div className="col-6 col-md-2 mb-3">
             <h5>Main Office</h5>
-            <ul className="nav flex-column">
+            <ul className="nav flex-column" style={{ fontSize: "0.75rem" }}>
               <li className="nav-item mb-2">Times Towers Building</li>
               <li className="nav-item mb-2">Haile Selassie Avenue</li>
               <li className="nav-item mb-2">P. O. Box 0707 - 00100</li>
@@ -25,7 +25,7 @@ const Footer = () => {
 
           <div className="col-6 col-md-2 mb-3">
             <h5>Quick Links</h5>
-            <ul className="nav flex-column">
+            <ul className="nav flex-column" style={{ fontSize: "0.75rem" }}>
               <li className="nav-item mb-2">
                 <a href="#" className="nav-link p-0 text-white">
                   Home
@@ -61,7 +61,7 @@ const Footer = () => {
 
           <div className="col-6 col-md-2 mb-3">
             <h5>Contacts</h5>
-            <ul className="nav flex-column">
+            <ul className="nav flex-column" style={{ fontSize: "0.75rem" }}>
               <li className="nav-item mb-2">
                 <label htmlFor="">Email:</label>
                 <a
@@ -92,7 +92,9 @@ const Footer = () => {
           <div className="col-md-4 offset-md-0 mb-3">
             <form>
               <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <p style={{ fontSize: "0.75rem" }}>
+                Monthly digest of what's new and exciting from us.
+              </p>
               <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label for="newsletter1" className="visually-hidden">
                   Email address
@@ -105,7 +107,11 @@ const Footer = () => {
                   placeholder="Email address"
                 />
                 {/* <input id="newsletter1" type="text" className="form-control" placeholder="Email address"> */}
-                <button className="btn btn-dark" type="button">
+                <button
+                  className="btn btn-dark"
+                  type="button"
+                  style={{ fontSize: "0.75rem" }}
+                >
                   Subscribe
                 </button>
               </div>
@@ -114,7 +120,9 @@ const Footer = () => {
         </div>
 
         <div className="d-flex flex-column flex-sm-row justify-content-between py-3 my-4 border-top">
-          <p>© 2023 Company, Inc. All rights reserved.</p>
+          <p style={{ fontSize: "0.75rem" }}>
+            © 2023 Company, Inc. All rights reserved.
+          </p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
               <a className="link-dark" href="#">
