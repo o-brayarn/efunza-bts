@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import { Contacts } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      
+      <Contacts />
     </div>
   );
 }
