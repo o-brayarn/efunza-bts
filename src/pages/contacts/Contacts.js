@@ -3,7 +3,7 @@ import contactbg from "../../assets/contactbg.png";
 
 const Contacts = () => {
   return (
-    <section className="background-color">
+    <section className="background-color mb-5 mt-5">
       <div className="row g-0">
         <img
           src={contactbg}

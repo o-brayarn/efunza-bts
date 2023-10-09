@@ -12,13 +12,13 @@ const Services = () => {
           <img
             src={pic7}
             alt="..."
-            className="img-fluid vh-100 position-relative"
+            className="img-fluid position-relative"
             style={{
               filter: "brightness(30%)",
             }}
           />
         </div>
-        <div className="position-absolute text-white d-flex flex-column justify-content-center align-items-center p-5 mt-5 ">
+        <div className="position-absolute text-white d-flex flex-column justify-content-center align-items-center p-5 mt-5 text-center">
           <h1 className="mt-5 pt-5" style={{ fontSize: "5rem" }}>
             Services
           </h1>

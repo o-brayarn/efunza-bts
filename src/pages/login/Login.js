@@ -3,7 +3,6 @@ import "./login.css";
 import LogoImg from "../../assets/logo.png";
 import bg from "../../assets/Bus.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {Link} from'react-scroll';
 import { Link } from "react-router-dom";
 
 const Login = () => {

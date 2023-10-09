@@ -12,20 +12,20 @@ const Header = () => {
             <a
               className="nav-link active text-white"
               aria-current="page"
-              href="#"
+              href="/"
               type="mailto:hello@efunzabts.com"
             >
               Email Us: hello@efunzabts.com
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#" type="tel:+25471234567">
+            <a className="nav-link text-white" href="/" type="tel:+25471234567">
               Call: 071234567
             </a>
           </li>
         </div>
         <li className="nav-item float-end">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="login">
             <button
               type="button"
               className="btn btn-outline-light"
@@ -36,9 +36,9 @@ const Header = () => {
           </a>
         </li>
       </ul>
-      <nav className="navbar navbar-expand-lg  bg-white ">
+      <nav className="navbar navbar-expand-lg bg-white ">
         <div className="container-fluid">
-          <a className="navbar-brand pe-5" href="#">
+          <a className="navbar-brand pe-5" href="/">
             EBTS
           </a>
           <button
@@ -69,22 +69,22 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-4" href="#">
+                <a className="nav-link px-4" href="/about">
                   About Us
                 </a>
               </li>{" "}
               <li className="nav-item">
-                <a className="nav-link px-4" href="#">
+                <a className="nav-link px-4" href="/parcel">
                   Parcel
                 </a>
               </li>{" "}
               <li className="nav-item">
-                <a className="nav-link px-4" href="#">
+                <a className="nav-link px-4" href="/contacts">
                   Contact Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-4" href="#">
+                <a className="nav-link px-4" href="/book">
                   Book Ticket
                 </a>
               </li>
