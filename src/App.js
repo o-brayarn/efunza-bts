@@ -1,3 +1,4 @@
+
 import Header from './components/header/Header';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
@@ -6,10 +7,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faCoffee, faUser, faLock, faEye, faInbox } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Contacts } from "./pages";
 
 library.add(fab, faCheckSquare, faCoffee, faUser, faLock, faEye, faInbox);
 
- 
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </BrowserRouter>
   );
