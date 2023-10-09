@@ -28,8 +28,8 @@ const Login = () => {
               <small className="text-white">Sign in to your account</small>
             </div>
             <form className="form  p-4 mb-5">
-              <div class="input-group">
-                <span class="input-group-text">
+              <div className="input-group">
+                <span className="input-group-text">
                   <FontAwesomeIcon icon="user" />{" "}
                 </span>
                 <input
@@ -38,8 +38,8 @@ const Login = () => {
                   placeholder="Username"
                 />
               </div>
-              <div class="input-group my-3">
-                <span class="input-group-text">
+              <div className="input-group my-3">
+                <span className="input-group-text">
                   <FontAwesomeIcon icon="lock" />
                 </span>
                 <input
@@ -47,7 +47,7 @@ const Login = () => {
                   className="form-control"
                   placeholder="Password"
                 />
-                <span class="input-group-text">
+                <span className="input-group-text">
                   <FontAwesomeIcon icon="eye" />{" "}
                 </span>
               </div>
