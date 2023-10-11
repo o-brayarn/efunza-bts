@@ -49,13 +49,16 @@ const Home = () => {
         </div>
 
         <div className="row g-0 mb-5 py-5 px-4 ">
-          <div className="col position-relative  d-flex justify-content-center align-items-center">
+          <div
+            className="col-12 col-md-6  position-relative d-flex justify-content-center align-items-center"
+            style={{ height: "25rem" }}
+          >
             <div className="z-3 position-absolute p-5 rounded-3 ms-4 mt-4 shadow-lg">
               <img
                 src={pic1}
                 alt=" Multiple Buses"
                 className="img-fluid shadow-lg"
-                style={{ width: "15rem", height: "15rem" }}
+                style={{ width: "20rem", height: "15rem" }}
               />
             </div>
             <div className="z-2 position-absolute p-5 rounded-3 ms-5 mt-5 shadow-lg">
@@ -63,7 +66,7 @@ const Home = () => {
                 src={pic3}
                 alt="Buses on a road"
                 className="img-fluid shadow"
-                style={{ width: "15rem", height: "15rem" }}
+                style={{ width: "20rem", height: "15rem" }}
               />
             </div>
             <div className="z-1 position-absolute p-5 rounded-3 ms-6 me-6 shadow-lg">
@@ -71,12 +74,12 @@ const Home = () => {
                 src={pic6}
                 alt="Buses on the road"
                 className="img-fluid shadow"
-                style={{ width: "15rem", height: "15rem" }}
+                style={{ width: "20rem", height: "15rem" }}
               />
             </div>
           </div>
 
-          <div className="col py-4 px-5">
+          <div className="col-12 col-md-6  py-4 px-5">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
               id earum temporibus obcaecati quae asperiores, dolorem expedita

@@ -5,7 +5,7 @@ const ServiceCard = () => {
   return (
     <div
       className="row bg-white py-2 px-2 mb-2 d-flex justify-content-center align-items-center rounded"
-      style={{ width: "80%" }}
+      style={{ width: "60%" }}
     >
       <div className="col d-flex justify-content-center align-items-center">
         <img
