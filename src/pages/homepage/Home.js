@@ -3,7 +3,6 @@ import BookingCard from "../../components/bookingCard/BookingCard";
 import pic1 from "../../assets/photos/pic1.jpg";
 import pic2 from "../../assets/photos/pic2.jpg";
 import pic3 from "../../assets/photos/pic3.jpg";
-import pic4 from "../../assets/photos/pic4.jpg";
 import pic6 from "../../assets/photos/pic6.jpg";
 import TextCard from "../../components/textCard/TextCard";
 
@@ -57,7 +56,7 @@ const Home = () => {
             <div className="z-3 position-absolute p-5 rounded-3 ms-4 mt-4 shadow-lg">
               <img
                 src={pic1}
-                alt="Image of Buses"
+                alt=" Multiple Buses"
                 className="img-fluid shadow-lg"
                 style={{ width: "20rem", height: "15rem" }}
               />
@@ -65,7 +64,7 @@ const Home = () => {
             <div className="z-2 position-absolute p-5 rounded-3 ms-5 mt-5 shadow-lg">
               <img
                 src={pic3}
-                alt="Image of Buses"
+                alt="Buses on a road"
                 className="img-fluid shadow"
                 style={{ width: "20rem", height: "15rem" }}
               />
@@ -73,7 +72,7 @@ const Home = () => {
             <div className="z-1 position-absolute p-5 rounded-3 ms-6 me-6 shadow-lg">
               <img
                 src={pic6}
-                alt="Image of Buses"
+                alt="Buses on the road"
                 className="img-fluid shadow"
                 style={{ width: "20rem", height: "15rem" }}
               />

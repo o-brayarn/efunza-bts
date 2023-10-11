@@ -27,32 +27,32 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul className="nav flex-column" style={{ fontSize: "0.75rem" }}>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
+                <a href="/" className="nav-link p-0 text-white">
                   Home
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
+                <a href="services" className="nav-link p-0 text-white">
                   Services
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
+                <a href="about" className="nav-link p-0 text-white">
                   About Us
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
+                <a href="tickets" className="nav-link p-0 text-white">
                   Tickets
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
+                <a href="contacts" className="nav-link p-0 text-white">
                   Contact Us
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white">
+                <a href="tickets" className="nav-link p-0 text-white">
                   Book a Ticket
                 </a>
               </li>
@@ -111,7 +111,7 @@ const Footer = () => {
                 >
                   Email address
                 </label>
-                {/* <input id="newsletter1" type="text" className="form-control" placeholder="Email address"> */}
+  
                 <button
                   className="btn btn-dark"
                   type="button"
@@ -130,7 +130,7 @@ const Footer = () => {
           </p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
-              <a className="link-dark" href="#">
+              <a className="link-dark" href="https://x.com/efunza">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -144,7 +144,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#">
+              <a className="link-dark" href="https://instagram.com/efunza">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -158,7 +158,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#">
+              <a className="link-dark" href="https://facebook.com/efunza">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

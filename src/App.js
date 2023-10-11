@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import { Contacts, Login, About, Register } from "./pages";
+import { Contacts, Login, About, Register, Checkout, Services } from "./pages";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Home from "./pages/homepage/Home";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Services from "./pages/services/Services";
+import { Header, Footer } from "./components";
+
 import {
   faCheckSquare,
   faCoffee,
@@ -21,7 +20,7 @@ library.add(fab, faCheckSquare, faCoffee, faUser, faLock, faEye, faInbox);
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App font-family">
       <Header />
       <Router>
         <Routes>
@@ -31,6 +30,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/tickets" element={<Checkout />} />
         </Routes>
       </Router>
       <Footer />
