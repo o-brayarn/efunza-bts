@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css";
 
 const Header = () => {
   return (
@@ -36,9 +37,13 @@ const Header = () => {
           </a>
         </li>
       </ul>
+
       <nav className="navbar navbar-expand-lg bg-white ">
         <div className="container-fluid">
-          <a className="navbar-brand pe-5 fw-bolder" href="#">
+          <a
+            className="navbar-brand pe-5 fw-bolder fst-italic ms-3 fs-1"
+            href="/"
+          >
             EBTS
           </a>
           <button
@@ -53,7 +58,7 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0  ">
+            <ul className="navbar-nav fw-bold ms-auto mb-2 mb-lg-0  ">
               <li className="nav-item ">
                 <a
                   className="nav-link active px-4"
@@ -74,7 +79,7 @@ const Header = () => {
                 </a>
               </li>{" "}
               <li className="nav-item">
-                <a className="nav-link px-4" href="parcel">
+                <a className="nav-link disabled px-4" href="parcel">
                   Parcel
                 </a>
               </li>{" "}

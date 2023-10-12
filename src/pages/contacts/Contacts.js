@@ -1,12 +1,12 @@
 import React from "react";
-import contactbg from "../../assets/contactbg.png";
+import pic7 from "../../assets/photos/pic7.jpg";
 
 const Contacts = () => {
   return (
-    <section className="background-color mb-5 mt-5">
+    <section className="background-color mb-5">
       <div className="row g-0">
         <img
-          src={contactbg}
+          src={pic7}
           className="img-fluid"
           alt="A car in the street"
           style={{
@@ -14,9 +14,8 @@ const Contacts = () => {
             height: "30vh",
           }}
         />
-
         <div className="position-absolute text-white align-text-left ">
-          <h1 className="mt-5 pt-5">Contact Us</h1>
+          <h1 className="fw-bolder display-1 ms-5 mt-5 pt-5">Contact Us</h1>
         </div>
       </div>
 
@@ -46,11 +45,11 @@ const Contacts = () => {
       <div className="d-flex justify-content-around mb-3 px-3">
         <div>
           <div className="text">
-            <p className="mb-5 mt-3">
+            <p className="fs-6 font-family mb-5 mt-3">
               Need to leave any feedback about our services? Do you want to
               cancel or change your ticket?
             </p>
-            <p className="mb-5 mt-3">
+            <p className="fs-6 font-family mb-5 mt-3">
               Leave us a message and we'll respond as soon as possible
             </p>
           </div>
