@@ -9,7 +9,7 @@ const About = () => {
       <div className="row">
         <div className="col-lg-12 mb-5 hero-about">
           <div className="profile-image text-center">
-            <h1> About BUS</h1>
+            <h1> About Us</h1>
           </div>
         </div>
 
@@ -51,14 +51,22 @@ const About = () => {
         </div>
 
         <div className="row bg-light align-content-sm-center mt-5">
-          <div className="col-lg-4  col-md-6 col-m-12">
-            <h4 className="text-primary">About-us</h4>
+          <div className="col-lg-4 col-md-6 col-m-12">
+            <h3
+              className=" text-white border border-0 rounded p-2"
+              style={{
+                width: "fit-content",
+                backgroundColor: "#1c23cb",
+              }}
+            >
+              About Us
+            </h3>
             <p>
               We are passionate about making your travel experience smooth,
               convenient and memorable. Whether you're a daily commuter or an
               adventure seeker exploring new destinations we've got you covered
             </p>
-            <a href="/contact" className="btn btn-success mt-3">
+            <a href="/contact" className="btn btn-dark mt-3">
               {" "}
               Get in Touch
             </a>
