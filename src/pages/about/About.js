@@ -53,7 +53,7 @@ const About = () => {
         <div className="row bg-light align-content-sm-center mt-5">
           <div className="col-lg-4 col-md-6 col-m-12">
             <h3
-              className=" text-white border border-0 rounded p-2"
+              className=" text-white border border-0 rounded p-2 mb-4"
               style={{
                 width: "fit-content",
                 backgroundColor: "#1c23cb",
