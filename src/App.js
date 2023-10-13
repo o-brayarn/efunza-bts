@@ -1,11 +1,41 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Contacts, Login, About, Register, Checkout, Services } from "./pages";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import Home from "./pages/homepage/Home";
+import { Header, Footer } from "./components";
 
-function App() {
+import {
+  faCheckSquare,
+  faCoffee,
+  faUser,
+  faLock,
+  faEye,
+  faInbox,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faCheckSquare, faCoffee, faUser, faLock, faEye, faInbox);
+
+const App = () => {
   return (
-    <div className="App">
-      
+    <div className="App font-family">
+      <Header />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/tickets" element={<Checkout />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
