@@ -77,7 +77,7 @@ const register = () => {
               </div>
               <p className="text-white float-end">
                 Already have an account? &nbsp;
-                <Link to="/" className="text-white">
+                <Link to="/login" className="text-white">
                   {" "}
                   Login{" "}
                 </Link>
