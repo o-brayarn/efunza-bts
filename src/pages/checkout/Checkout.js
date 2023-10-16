@@ -64,7 +64,7 @@ const Checkout = () => {
 
         <div className="row-auto text-center mt-5">
           <button type="submit" className="btn btn-dark fs-3 fw-bold">
-            Book A Ticket
+            Book Ticket(s)
           </button>
         </div>
       </form>

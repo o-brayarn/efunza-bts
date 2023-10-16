@@ -5,7 +5,7 @@ import bg from "../../assets/Bus.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Link } from "react-router-dom";
-const register = () => {
+const Register = () => {
   return (
     <div className="container mt-5">
       <div className="row">
@@ -94,4 +94,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;
