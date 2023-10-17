@@ -13,17 +13,16 @@ const BookingCard = () => {
                 id=""
                 className="form-select form-select-sm"
                 style={{ width: "10rem" }}
+                defaultValue="selected"
               >
-                <option value="" selected>
-                  Nairobi
-                </option>
+                <option value="selected">Nairobi</option>
                 <option value="">Kisumu</option>
                 <option value="">Narok</option>
                 <option value="">Nakuru</option>
                 <option value="">Naivasha</option>
                 <option value="">Mombasa</option>
               </select>
-              <label htmlFor="">From</label>
+              <label>From</label>
             </div>
 
             <div className="col form-floating px-3 mx-2 my-1 ">
@@ -32,15 +31,14 @@ const BookingCard = () => {
                 id=""
                 className="form-select form-select-sm"
                 style={{ width: "10rem" }}
+                defaultValue="selected"
               >
                 <option value="">Nairobi</option>
                 <option value="">Kisumu</option>
                 <option value="">Narok</option>
                 <option value="">Nakuru</option>
                 <option value="">Naivasha</option>
-                <option value="" selected>
-                  Mombasa
-                </option>
+                <option value="selected">Mombasa</option>
               </select>
               <label htmlFor="">To</label>
             </div>
@@ -58,10 +56,9 @@ const BookingCard = () => {
             <div className="col px-4 mx-2 my-2 d-flex align-items-center">
               <button
                 type="submit"
-                className="btn btn-primary btn-small px-5 rounded-pill "
-                style={{ fontSize: "0.75rem" }}
+                className="btn btn-primary btn-small px-5 rounded-pill fw-medium"
               >
-                Book
+                Reserve
               </button>
             </div>
           </div>

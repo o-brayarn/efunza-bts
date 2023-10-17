@@ -3,7 +3,7 @@ import React from "react";
 const Amount = () => {
   return (
     <div className="col-sm-2 ">
-      <label for="destination" className="form-label fw-bold">
+      <label for="amount" className="form-label fw-bold">
         AMOUNT:
       </label>
 

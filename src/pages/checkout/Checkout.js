@@ -18,21 +18,22 @@ const Checkout = () => {
 
         <div className="position-absolute text-white align-text-left ">
           <h1 className="fw-bolder display-1 text-center mt-5 pt-5">
-            Book A Ticket
+            Book Ticket
           </h1>
         </div>
       </div>
 
       <form className="row gx-3 gy-2 mt-5 mx-auto d-flex justify-content-center align-items-center">
         <div className="col-sm-3">
-          <label for="start-point" className="form-label fw-bold">
+          <label for="origin" className="form-label fw-bold">
             FROM:
           </label>
           <select
             className="form-select form-select-lg border border-dark"
             id="specificSizeSelect"
+            defaultValue="selected"
           >
-            <option selected>Nairobi</option>
+            <option value="selected">Nairobi</option>
             <option value="1">Kisumu</option>
             <option value="2">Narok</option>
             <option value="3">Nakuru</option>
@@ -49,8 +50,9 @@ const Checkout = () => {
           <select
             className="form-select form-select-lg border border-dark"
             id="specificSizeSelect"
+            defaultValue="selected"
           >
-            <option selected>Kilifi</option>
+            <option value="selected">Kilifi</option>
             <option value="1">Kisumu</option>
             <option value="2">Narok</option>
             <option value="3">Nakuru</option>
@@ -64,7 +66,7 @@ const Checkout = () => {
 
         <div className="row-auto text-center mt-5">
           <button type="submit" className="btn btn-dark fs-3 fw-bold">
-            Book A Ticket
+            Book Ticket(s)
           </button>
         </div>
       </form>
