@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import pic7 from "../../assets/photos/pic7.jpg";
+import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_gtj2gy9",
+        "template_vpkvfjd",
+        form.current,
+        "NUDmFNU_jpGegkl9u"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <section className="background-color mb-5">
       <div className="row g-0">
@@ -55,18 +78,19 @@ const Contacts = () => {
           </div>
 
           <div className="col bg-white rounded-4 shadow-sm">
-            <form className="row g-3 mt-3 px-3">
+            <form className="row g-3 mt-3 px-3" ref={form} onSubmit={sendEmail}>
               <div className="col-md-6">
                 <input
-                  type="email"
+                  type="text"
+                  name="user_name"
                   className="form-control"
                   placeholder="Your Name"
-                  id="inputEmail4"
                 />
               </div>
               <div className="col-md-6">
                 <input
                   type="email"
+                  name="user_email"
                   className="form-control"
                   placeholder="Your Email Address"
                 />
@@ -74,6 +98,7 @@ const Contacts = () => {
               <div className="col-sm-6">
                 <input
                   type="text"
+                  name="user_phone"
                   className="form-control"
                   id="inputAddress"
                   placeholder="Phone Number"
@@ -81,6 +106,7 @@ const Contacts = () => {
               </div>
               <div className="mb-3">
                 <textarea
+                  name="message"
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="5"
