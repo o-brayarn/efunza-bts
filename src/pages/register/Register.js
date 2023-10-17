@@ -1,97 +1,65 @@
-import React from "react";
-import "./register.css";
-import LogoImg from "../../assets/logo.png";
-import bg from "../../assets/Bus.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import React from 'react'
+import './register.css'
 import { Link } from "react-router-dom";
-const Register = () => {
+const register = () => {
   return (
-    <div className="container mt-5">
+    <div className="ccontainer-fluid  overflow-y-hidden bg-dark h-100 w-100 pt-5">
       <div className="row">
-        <div className="col-lg-2 col-md-2 "></div>
-        <div className="col-lg-4  busyangu d-flex align-items-center">
-          <div className="bus-image">
-            <img src={bg} alt="Bus" className="bg img-fluid w-100" />
-          </div>
+      <div className='col-lg-2 col-md-2 ' ></div>
+        <div className="col-lg-4  bgimg bg-white d-flex align-items-center" >
+        <div class="background-image"></div>
+        <div class="overlay"></div>
+        <div className="content align-self-center text-center">
+             <h2 className='h5 fw-bolder'>EFUNZA BUS <br/>TICKETING SYSTEM</h2>
         </div>
-
-        <div className="col-lg-4  col-md-4 bg-dark d-flex">
-          <div>
-            <div className="login-form text-center">
-              <img
-                src={LogoImg}
-                alt="logo"
-                className="LogoImg img-fluid w-25 mt-2 text-center"
-              />
-              <h1 className="text-white">Register</h1>
-              <small className="text-white">Register your account</small>
-            </div>
-            <form className="form  p-4 mb-5">
-              <div className="input-group my-3">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="user" />{" "}
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter your full name"
-                />
-              </div>
-              <br />
-              <div className="input-group">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="inbox" />{" "}
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div className="input-group my-3">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="lock" />
-                </span>
-                <input
-                  type="password"
-                  className="form-control"
-                  placeholder="Enter password"
-                />
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="eye" />{" "}
-                </span>
-              </div>
-              <div className="input-group my-3">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="lock" />
-                </span>
-                <input
-                  type="password"
-                  className="form-control"
-                  placeholder="Confirm Password"
-                />
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="eye" />{" "}
-                </span>
-              </div>
-              <p className="text-white float-end">
-                Already have an account? &nbsp;
-                <Link to="/login" className="text-white">
-                  {" "}
-                  Login{" "}
-                </Link>
-              </p>
-              <a href="register" className="btn btn-primary mt-3 btn-sm w-100">
-                Register
-              </a>
-            </form>
-          </div>
+       </div>
+        
+        <div className='col-lg-4  col-md-4 bg-light'>
+          <div className='py-5'>
+        <div className="login-form text-center">
+      <h1 className="">Register</h1>
+      <small className=''>Register your account</small>
         </div>
-        <div className="col-lg-2 col-md-2"></div>
-      </div>
-    </div>
-  );
-};
+       <form className='form p-4 mb-5'>
+        
+       <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your full name"/>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email address"/>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Password</label>
+  <input type="password" class="form-control" id="password" placeholder="Password"/>
+</div>
+<div class="mb-3">
+  <label for="confirmpass" class="form-label">Confirm Password</label>
+  <input type="password" class="form-control" id="confirmpass" placeholder="Confirm password"/>
+</div>
+  <div className='form-row d-flex justify-content-between'>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+        <label class="form-check-label" for="flexCheckChecked">
+          Show Password
+        </label>
+         </div>
+             <p className="text-dark">Forgot Password?</p>
+         </div>
+         <input type='submit' className='btn btn-primary mt-4 content-center fw-1 w-100 my-2 text-capitalize'value='REGISTER'/>
+      <div className='text-center'>
+        Already have an account? &nbsp;
+        <Link to="/" className='text-primary'> Login   </Link>
+        </div>
+        
+       </form>
+       </div>
+       </div>
+       <div className='col-lg-2 col-md-2'></div>
+       </div>
+       </div>
+    )
+}
 
-export default Register;
+export default register
