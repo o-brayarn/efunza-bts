@@ -3,9 +3,9 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className="sticky-top">
+    <div className="fixed-top">
       <ul
-        className=" nav bg-primary text-white d-flex justify-content-between"
+        className="nav bg-primary text-white d-flex justify-content-between"
         style={{ fontSize: "0.75rem" }}
       >
         <div className="d-flex">

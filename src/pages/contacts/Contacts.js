@@ -26,7 +26,7 @@ const Contacts = () => {
     e.target.reset();
   };
   return (
-    <section className="background-color mb-5">
+    <section className="background-color mb-5 mt-5 pt-5">
       <div className="row g-0">
         <img
           src={pic7}
@@ -37,7 +37,7 @@ const Contacts = () => {
             height: "30vh",
           }}
         />
-        <div className="position-absolute text-white align-text-left ">
+        <div className="position-absolute text-white text-start">
           <h1 className="fw-bolder display-1 ms-5 mt-5 pt-5">Contact Us</h1>
         </div>
       </div>

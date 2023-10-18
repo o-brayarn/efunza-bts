@@ -1,12 +1,13 @@
-.profile-image{
+.profile-image {
   position: relative;
   width: 100%;
-  height: 50vh; 
+  height: 50vh;
 }
 
 /* Set the background image */
 .background-image {
-  background: url('../../assets/image2.png') left no-repeat, url('../../assets/image3.png') right no-repeat;
+  background: url("../../assets/photos/pic1.jpg") left no-repeat,
+    url("../../assets/photos/pic3.jpg") right no-repeat;
   background-size: cover;
   background-position: center;
   background-size: 50% 100%, 50% 100%;
@@ -18,7 +19,7 @@
 
 /* Add the background overlay */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.3);  
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -33,30 +34,29 @@
   color: #fff; /* Text color */
 }
 
-.hero-about h1{
-  position:absolute;
+.hero-about h1 {
+  position: absolute;
   align-items: center;
   width: 100%;
 }
-.company{
-   
+.company {
 }
-.company .box{
+.company .box {
   background: #fff;
 }
-.company .box p{
-  font-size:1.2rem;
+.company .box p {
+  font-size: 1.2rem;
 }
-.box h3{
+.box h3 {
   color: black;
 }
 .aboutcontent {
   margin-bottom: 60px;
 }
-.aboutcontent .abouth4{
-  width:200px;
+.aboutcontent .abouth4 {
+  width: 200px;
   height: 60px;
-  background:blue;
+  background: blue;
   display: flex;
   align-items: center;
   text-align: end;
