@@ -5,7 +5,7 @@ import { Contacts, Login, About, Register, Checkout, Services } from "./pages";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Home from "./pages/homepage/Home";
-import { Header, Footer } from "./components";
+import { Header, Footer, NavbarFooter } from "./components";
 
 import {
   faCheckSquare,
@@ -21,8 +21,10 @@ library.add(fab, faCheckSquare, faCoffee, faUser, faLock, faEye, faInbox);
 const App = () => {
   return (
     <div className="App font-family">
-      <Header />
       <Router>
+        <NavbarFooter>
+          <Header />
+        </NavbarFooter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -32,8 +34,10 @@ const App = () => {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/tickets" element={<Checkout />} />
         </Routes>
+        <NavbarFooter>
+          <Footer />
+        </NavbarFooter>
       </Router>
-      <Footer />
     </div>
   );
 };

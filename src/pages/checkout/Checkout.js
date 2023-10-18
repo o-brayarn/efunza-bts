@@ -4,7 +4,7 @@ import { Amount, Counter } from "../../components";
 
 const Checkout = () => {
   return (
-    <section className="mb-5">
+    <section className="mb-5 mt-5 pt-5">
       <div className="row g-0">
         <img
           src={pic7}

@@ -1,23 +1,26 @@
 import React from "react";
 import "./about.css";
-
-import cittyhoppa from "../../assets/cittyhoppa.png";
-
+import pic5 from "../../assets/photos/pic5.jpg";
 const About = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mt-5 pt-5">
       <div className="row">
-        <div className="col-lg-12 mb-5 hero-about">
-          <div className="profile-image text-center">
-            <h1> About Us</h1>
+        <div className="col-lg-12 mb-5 px-0">
+          <div className="profile-image ">
+            <div class="background-image"></div>
+            <div class="overlay"></div>
+            <div class="content text-center">
+              <h1 className="fw-bolder display-1">About Us</h1>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div className="row bg-light align-content-sm-center">
+      <div className="container">
+        <div className="row company bg-light align-content-sm-center">
           <div className="col-md-4 col-lg-4 d-flex mb-3">
-            <div className="card p-3 w-100">
-              <h3>Our vision</h3>
-              <hr />
+            <div className="box p-4 w-100 rounded">
+              <h3 className="text-center fw-bold">Our vision</h3>
               <p>
                 To be the go to traveling company in Kenya and to make traveling
                 affordable for everyone.
@@ -25,9 +28,8 @@ const About = () => {
             </div>
           </div>
           <div className="col-md-4 col-lg-4 d-flex mb-3">
-            <div className="card p-3 w-100">
-              <h3>Our Mission</h3>
-              <hr />
+            <div className="box p-4 w-100 rounded">
+              <h3 className="text-center fw-bold">Our Mission</h3>
               <p>
                 Our mission is to redefine the way you experience bus traveling.
                 We are dedicated to providing you with seamless, safe and
@@ -36,9 +38,8 @@ const About = () => {
             </div>
           </div>
           <div className="col-md-4 col-lg-4 d-flex mb-3">
-            <div className="card p-3 w-100">
-              <h3>Company values</h3>
-              <hr />
+            <div className="box p-4 w-100 rounded">
+              <h3 className="text-center fw-bold">Company values</h3>
               <p>
                 Integrity.
                 <br />
@@ -50,33 +51,34 @@ const About = () => {
           </div>
         </div>
 
-        <div className="row bg-light align-content-sm-center mt-5">
-          <div className="col-lg-4 col-md-6 col-m-12">
-            <h3
-              className=" text-white border border-0 rounded p-2 mb-4"
-              style={{
-                width: "fit-content",
-                backgroundColor: "#1c23cb",
-              }}
-            >
-              About Us
-            </h3>
+        <div class="row bg-light align-content-sm-center mt-5 aboutcontent">
+          <div class="col-lg-7  col-md-8 col-m-12">
+            <div className="abouth4 d-flex justify-content-around  mb-3">
+              <h4 class="text-white fw-bold">About Us</h4>
+            </div>
             <p>
               We are passionate about making your travel experience smooth,
               convenient and memorable. Whether you're a daily commuter or an
               adventure seeker exploring new destinations we've got you covered
             </p>
-            <a href="/contact" className="btn btn-dark mt-3">
+            <p>
               {" "}
-              Get in Touch
-            </a>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              dolorem illum beatae quidem ex harum consectetur necessitatibus
+              minus, provident, vitae optio. At sapiente deleniti doloremque
+              nemo nobis similique, tenetur incidunt Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quae dolorem illum beatae quidem ex
+              harum consectetur necessitatibus minus, provident, vitae optio. At
+              sapiente deleniti doloremque nemo nobis similique, tenetur
+              incidunt
+            </p>
           </div>
-          <div className="col-lg-8 col-md-6 col-sm-12 ">
+          <div class="col-lg-5 col-md-4 col-sm-12 ">
             <div className="profile-image text-center">
               <img
-                src={cittyhoppa}
-                alt="images i.png"
-                className="Img img-fluid w-100"
+                src={pic5}
+                alt="images 3.png"
+                className="Img img-fluid rounded-5"
               />
             </div>
           </div>
@@ -85,5 +87,4 @@ const About = () => {
     </div>
   );
 };
-
 export default About;

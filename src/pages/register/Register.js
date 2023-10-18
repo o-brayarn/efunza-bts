@@ -1,96 +1,106 @@
 import React from "react";
 import "./register.css";
-import LogoImg from "../../assets/logo.png";
-import bg from "../../assets/Bus.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { Link } from "react-router-dom";
 const Register = () => {
   return (
-    <div className="container mt-5">
+    <section className="container-fluid overflow-y-hidden background">
       <div className="row">
-        <div className="col-lg-2 col-md-2 "></div>
-        <div className="col-lg-4  busyangu d-flex align-items-center">
-          <div className="bus-image">
-            <img src={bg} alt="Bus" className="bg img-fluid w-100" />
+        <div className="col bgimg bg-white d-flex align-items-center">
+          <div className="background-image"></div>
+          <div className="overlay"></div>
+          <div className="content align-self-center text-center">
+            <h1 className="fw-bolder">EFUNZA BUS TICKETING SYSTEM</h1>
           </div>
         </div>
 
-        <div className="col-lg-4  col-md-4 bg-dark d-flex">
-          <div>
+        <div className="col-lg-4">
+          <div className="py-5">
             <div className="login-form text-center">
-              <img
-                src={LogoImg}
-                alt="logo"
-                className="LogoImg img-fluid w-25 mt-2 text-center"
-              />
-              <h1 className="text-white">Register</h1>
-              <small className="text-white">Register your account</small>
+              <h1 className="fw-bold">Register</h1>
+              <small className="fw-medium">Register to EBTS</small>
             </div>
-            <form className="form  p-4 mb-5">
-              <div className="input-group my-3">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="user" />{" "}
-                </span>
+            <form className="form p-4 mb-5">
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">
+                  Full Name
+                </label>
                 <input
                   type="text"
                   className="form-control"
+                  id="exampleFormControlInput1"
                   placeholder="Enter your full name"
                 />
               </div>
-              <br />
-              <div className="input-group">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="inbox" />{" "}
-                </span>
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">
+                  Email Address
+                </label>
                 <input
-                  type="text"
+                  type="email"
                   className="form-control"
-                  placeholder="Enter your email"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter email address"
                 />
               </div>
-              <div className="input-group my-3">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="lock" />
-                </span>
-                <input
-                  type="password"
-                  className="form-control"
-                  placeholder="Enter password"
-                />
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="eye" />{" "}
-                </span>
-              </div>
-              <div className="input-group my-3">
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="lock" />
-                </span>
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">
+                  Password
+                </label>
                 <input
                   type="password"
                   className="form-control"
-                  placeholder="Confirm Password"
+                  id="password"
+                  placeholder="Password"
                 />
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon="eye" />{" "}
-                </span>
               </div>
-              <p className="text-white float-end">
+              <div className="mb-3">
+                <label for="confirmpass" className="form-label">
+                  Confirm Password
+                </label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="confirmpass"
+                  placeholder="Confirm password"
+                />
+              </div>
+              <div className="form-row d-flex justify-content-between">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label className="form-check-label" for="flexCheckChecked">
+                    Show Password
+                  </label>
+                </div>
+                <p className="text-dark">Forgot Password?</p>
+              </div>
+              <input
+                type="submit"
+                className="btn btn-primary mt-4 content-center fw-1 w-100 my-2 text-capitalize"
+                value="REGISTER"
+              />
+              <div className="text-center">
                 Already have an account? &nbsp;
-                <Link to="/login" className="text-white">
+                <Link to="/login" className="text-primary">
                   {" "}
                   Login{" "}
                 </Link>
-              </p>
-              <a href="register" className="btn btn-primary mt-3 btn-sm w-100">
-                Register
-              </a>
+              </div>
+
+              <div className="text-end">
+                <Link to="/" className="text-dark fw-bold">
+                  Go back Home
+                </Link>
+              </div>
             </form>
           </div>
         </div>
-        <div className="col-lg-2 col-md-2"></div>
       </div>
-    </div>
+    </section>
   );
 };
 
